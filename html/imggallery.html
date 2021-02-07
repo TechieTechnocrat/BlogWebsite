@@ -1,0 +1,184 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gallery</title>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+  body,
+  html {
+    margin: 0;
+    background: palevioletred;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+  }
+
+  .container-all {
+    width: fit-content;
+    margin: 20px auto;
+    height: auto;
+  }
+
+  .container {
+    width: calc(33% - 6px);
+    overflow: hidden;
+    height: fit-content;
+    margin: 3px;
+    padding: 0;
+    display: block;
+    position: relative;
+    float: left;
+  }
+
+  img {
+    width: 100%;
+    transition-duration: .3s;
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aquamarine;
+    opacity: 50%;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: burlywood;
+  }
+
+  .title {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 35%;
+    display: none;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.6em;
+    text-shadow: 1px 5px 10px black;
+    transition-duration: .3s;
+  }
+
+  .text {
+    position: absolute;
+    top: 70%;
+    cursor: pointer;
+    max-width: 80%;
+    text-align: center;
+    left: 50%;
+    text-shadow: 1px 5px 10px black;
+    font-size: 1em;
+    display: none;
+    margin-right: -50%;
+    transition-duration: .3s;
+    transform: translate(-50%, -50%)
+  }
+
+  .container:hover img {
+    transform: scale(1.2);
+    transition-duration: .3s;
+    filter: grayscale(50%);
+    opacity: .4;
+  }
+
+  .container:hover span {
+    color: white;
+    display: block;
+    transition-duration: .3s;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .container {
+      width: calc(50% - 6px);
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .container {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <div id="navbar">
+    <ul>
+      <li><a class="active" href="../index.html">Home</a></li>
+      <li><a href="imggallery.html">Image gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+  <h1>A motivational page - Inspiration just from a click </h1>
+  
+  <div class="container-all">
+    <div class="container">
+      <img src="../img/aes1.jpg" alt="">
+      <span class="title">Nothing comes easy</span>
+      <span class="text">Remember always that things you dream of are not easy. Not everyone can do it. This is your
+        chance. You can do it.</span>
+    </div>
+    <div class="container">
+      <img src="../img/aes2.jpg" alt="">
+      <span class="title">Patience will take you long way</span>
+      <span class="text">Its not going to be easy. Determination and patience will be major pillars of your future
+        incoming success. So focus and be patient.</span>
+    </div>
+    <div class="container">
+      <img src="../img/aes3.jpg" alt="">
+      <span class="title">Hard work will pay off someday</span>
+      <span class="text">Do not be sad about not enjoying your life. Enjoy moments as they come in your life. But focus
+        and study. Sparking future awaits you.</span>
+    </div>
+    <div class="container">
+      <img src="../img/aes4.jpg" alt="">
+      <span class="title">Leave it if you hate it</span>
+      <span class="text">Do whatever makes you happy. If you like playing guitar go for it. But understand the
+        competetion and analyse where you stand in it.</span>
+    </div>
+    <div class="container">
+      <img src="../img/aes5.jpg" alt="">
+      <span class="title">Everyone starts somewhere</span>
+      <span class="text">Everyone has a start. If you are afraid of doing something just sit to do it. Determination and
+        focus will be crucial. </span>
+    </div>
+    <div class="container">
+      <img src="../img/aes6.jpg" alt="">
+      <span class="title"> Cut toxic people</span>r</span>
+      <span class="text">Be with people who radiate positivity. Not with those who always try to bring you down.</span>
+    </div>
+  </div>
+</body>
+
+</html>
